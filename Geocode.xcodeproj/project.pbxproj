@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		298EFE221A7993C5000094E9 /* LookupLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 298EFE211A7993C5000094E9 /* LookupLocation.m */; };
 		29ED681C1A72674D00ED5E23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29ED681B1A72674D00ED5E23 /* main.m */; };
 		29ED681F1A72674D00ED5E23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29ED681E1A72674D00ED5E23 /* AppDelegate.m */; };
 		29ED68221A72674D00ED5E23 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29ED68211A72674D00ED5E23 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		29ED68271A72674D00ED5E23 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29ED68261A72674D00ED5E23 /* Images.xcassets */; };
 		29ED682A1A72674D00ED5E23 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29ED68281A72674D00ED5E23 /* LaunchScreen.xib */; };
 		29ED68361A72674D00ED5E23 /* GeocodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29ED68351A72674D00ED5E23 /* GeocodeTests.m */; };
+		33BE8E916F4188388498700C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1D4D04BB6AB97DCB094CBF /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		298EFE201A7993C5000094E9 /* LookupLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookupLocation.h; sourceTree = "<group>"; };
+		298EFE211A7993C5000094E9 /* LookupLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookupLocation.m; sourceTree = "<group>"; };
 		29ED68161A72674D00ED5E23 /* Geocode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geocode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29ED681A1A72674D00ED5E23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29ED681B1A72674D00ED5E23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,9 @@
 		29ED682F1A72674D00ED5E23 /* GeocodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeocodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29ED68341A72674D00ED5E23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29ED68351A72674D00ED5E23 /* GeocodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeocodeTests.m; sourceTree = "<group>"; };
+		2F558564E0FDB74EE1E566EA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CC149248FE94AAFA67543429 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EC1D4D04BB6AB97DCB094CBF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33BE8E916F4188388498700C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +68,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2130F106A91729A685EAFE4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F558564E0FDB74EE1E566EA /* Pods.debug.xcconfig */,
+				CC149248FE94AAFA67543429 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		25BEA96CCFEEE45539D44D48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC1D4D04BB6AB97DCB094CBF /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		29ED680D1A72674D00ED5E23 = {
 			isa = PBXGroup;
 			children = (
 				29ED68181A72674D00ED5E23 /* Geocode */,
 				29ED68321A72674D00ED5E23 /* GeocodeTests */,
 				29ED68171A72674D00ED5E23 /* Products */,
+				2130F106A91729A685EAFE4D /* Pods */,
+				25BEA96CCFEEE45539D44D48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +110,8 @@
 			children = (
 				29ED681D1A72674D00ED5E23 /* AppDelegate.h */,
 				29ED681E1A72674D00ED5E23 /* AppDelegate.m */,
+				298EFE201A7993C5000094E9 /* LookupLocation.h */,
+				298EFE211A7993C5000094E9 /* LookupLocation.m */,
 				29ED68201A72674D00ED5E23 /* ViewController.h */,
 				29ED68211A72674D00ED5E23 /* ViewController.m */,
 				29ED68231A72674D00ED5E23 /* Main.storyboard */,
@@ -126,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29ED68391A72674D00ED5E23 /* Build configuration list for PBXNativeTarget "Geocode" */;
 			buildPhases = (
+				806FD91B0822B09F9A8E3E03 /* Check Pods Manifest.lock */,
 				29ED68121A72674D00ED5E23 /* Sources */,
 				29ED68131A72674D00ED5E23 /* Frameworks */,
 				29ED68141A72674D00ED5E23 /* Resources */,
+				F7AB309279DB1325C7D5E0BD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,6 +245,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		806FD91B0822B09F9A8E3E03 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F7AB309279DB1325C7D5E0BD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		29ED68121A72674D00ED5E23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -221,6 +285,7 @@
 			files = (
 				29ED68221A72674D00ED5E23 /* ViewController.m in Sources */,
 				29ED681F1A72674D00ED5E23 /* AppDelegate.m in Sources */,
+				298EFE221A7993C5000094E9 /* LookupLocation.m in Sources */,
 				29ED681C1A72674D00ED5E23 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +406,7 @@
 		};
 		29ED683A1A72674D00ED5E23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F558564E0FDB74EE1E566EA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Geocode/Info.plist;
@@ -351,6 +417,7 @@
 		};
 		29ED683B1A72674D00ED5E23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC149248FE94AAFA67543429 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Geocode/Info.plist;
@@ -412,6 +479,7 @@
 				29ED683B1A72674D00ED5E23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29ED683C1A72674D00ED5E23 /* Build configuration list for PBXNativeTarget "GeocodeTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +488,7 @@
 				29ED683E1A72674D00ED5E23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

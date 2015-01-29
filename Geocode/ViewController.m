@@ -6,9 +6,19 @@
 //  Copyright (c) 2015 Marius Horga. All rights reserved.
 //
 
+/*
+ The app should pretty much have one text field (to enter the zip code) and should display city and state (and optional more information). Also only allow number input in the text field (don't show an alert but rather don't even allow input of characters).
+ 
+ Example: I enter 94301 and the app will display "Palo Alto, CA".
+*/
+
 #import "ViewController.h"
+#import "LookupLocation.h"
 
 @interface ViewController ()
+
+@property (strong, nonatomic) IBOutlet UITextField *textField;
+@property (strong, nonatomic) IBOutlet UILabel *label;
 
 @end
 
@@ -16,12 +26,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)buttonPressed:(id)sender {
+    NSString *input = self.textField.text;
+    LookupLocation* lookup = [LookupLocation sharedInstance];
+    //[lookup getInformationForZip:@"94301"];
+    [lookup getInformationForZip:input];
+    self.label.text = lookup.address;
 }
 
 @end
