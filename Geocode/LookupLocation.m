@@ -20,10 +20,6 @@
     return defaultInstance;
 }
 
-- (void)setOnCompletionBlock {
-    
-}
-
 - (void)getInformationForZip:(NSString *)zipCode {
     NSString *apikey = @"AIzaSyAVPN6PXhUtuyuCIS_AZTlztBix1m15EH4";
     NSString *url = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/geocode/json?address=%@&key=%@", zipCode, apikey];
@@ -33,7 +29,7 @@
         NSString *city = [[[[[responseObject objectForKey:@"results"] objectAtIndex:0] objectForKey:@"address_components"] objectAtIndex:1] objectForKey:@"long_name"];
         NSString *state = [[[[[responseObject objectForKey:@"results"] objectAtIndex:0] objectForKey:@"address_components"] objectAtIndex:2] objectForKey:@"short_name"];
         self.address = [NSString stringWithFormat:@"%@, %@", city, state];
-        NSLog(@"%@", self.address);
+        self.onCompletionBlock(city, state);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];

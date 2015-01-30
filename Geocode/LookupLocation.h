@@ -10,10 +10,10 @@
 
 @interface LookupLocation : NSObject
 
-@property (strong, nonatomic)NSString *address;
+@property (strong, nonatomic) NSString *address;
+@property (strong, nonatomic) void (^onCompletionBlock)(NSString* city, NSString* state);
 
 + (instancetype)sharedInstance;
-- (void)setOnCompletionBlock;
 - (void)getInformationForZip:(NSString *)zipCode;
 
 @end

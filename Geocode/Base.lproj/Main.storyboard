@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -83,15 +84,15 @@
                                 <exclude reference="stn-eD-9KO"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="2lw-YM-KKc"/>
-                                <exclude reference="fDQ-Do-HNM"/>
-                                <exclude reference="r0u-9M-7eg"/>
+                                <exclude reference="hfB-SI-Ggx"/>
                                 <exclude reference="59s-7V-JcE"/>
                                 <exclude reference="kA7-cD-Hx5"/>
                                 <exclude reference="qv8-9E-MDt"/>
+                                <exclude reference="2lw-YM-KKc"/>
+                                <exclude reference="fDQ-Do-HNM"/>
+                                <exclude reference="r0u-9M-7eg"/>
                                 <exclude reference="7Og-Qr-L3z"/>
                                 <exclude reference="oeQ-Zu-woM"/>
-                                <exclude reference="hfB-SI-Ggx"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -101,15 +102,15 @@
                                 <include reference="stn-eD-9KO"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="2lw-YM-KKc"/>
-                                <include reference="fDQ-Do-HNM"/>
-                                <include reference="r0u-9M-7eg"/>
+                                <include reference="hfB-SI-Ggx"/>
                                 <include reference="59s-7V-JcE"/>
                                 <include reference="kA7-cD-Hx5"/>
                                 <include reference="qv8-9E-MDt"/>
+                                <include reference="2lw-YM-KKc"/>
+                                <include reference="fDQ-Do-HNM"/>
+                                <include reference="r0u-9M-7eg"/>
                                 <include reference="7Og-Qr-L3z"/>
                                 <include reference="oeQ-Zu-woM"/>
-                                <include reference="hfB-SI-Ggx"/>
                             </mask>
                         </variation>
                     </view>
