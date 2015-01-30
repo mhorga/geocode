@@ -24,10 +24,13 @@
 
 - (IBAction)buttonPressed:(id)sender {
     NSString *input = self.textField.text;
-    LookupLocation* lookup = [LookupLocation sharedInstance];
-    [lookup onCompletionBlock:^(void)(NSString* city, NSString* state) {
-        self.label.text = lookup.address;
+    LookupLocation *lookup = [LookupLocation sharedInstance];
+    
+    [lookup setOnCompletionBlock:^(NSString * city, NSString *state) {
+        NSString *address = [NSString stringWithFormat:@"%@, %@", city, state];
+        self.label.text = address;
     }];
+     
     [lookup getInformationForZip:input];
     [self.textField resignFirstResponder];
 }

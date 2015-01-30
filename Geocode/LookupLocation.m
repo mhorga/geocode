@@ -28,7 +28,6 @@
     [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSString *city = [[[[[responseObject objectForKey:@"results"] objectAtIndex:0] objectForKey:@"address_components"] objectAtIndex:1] objectForKey:@"long_name"];
         NSString *state = [[[[[responseObject objectForKey:@"results"] objectAtIndex:0] objectForKey:@"address_components"] objectAtIndex:2] objectForKey:@"short_name"];
-        self.address = [NSString stringWithFormat:@"%@, %@", city, state];
         self.onCompletionBlock(city, state);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);

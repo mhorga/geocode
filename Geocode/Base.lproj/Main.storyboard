@@ -23,10 +23,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaQ-TV-PiL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaQ-TV-PiL">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="em2-Um-1Yr"/>
+                                    <constraint firstAttribute="height" constant="41" id="em2-Um-1Yr">
+                                        <variation key="widthClass=compact" constant="75"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -69,7 +71,9 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="upB-XY-dJ3" secondAttribute="trailing" constant="112" id="2lw-YM-KKc"/>
                             <constraint firstItem="uaQ-TV-PiL" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="167" id="59s-7V-JcE"/>
-                            <constraint firstItem="stn-eD-9KO" firstAttribute="top" secondItem="uaQ-TV-PiL" secondAttribute="bottom" constant="74" id="7Og-Qr-L3z"/>
+                            <constraint firstItem="stn-eD-9KO" firstAttribute="top" secondItem="uaQ-TV-PiL" secondAttribute="bottom" constant="74" id="7Og-Qr-L3z">
+                                <variation key="widthClass=compact" constant="40"/>
+                            </constraint>
                             <constraint firstItem="upB-XY-dJ3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="116" id="fDQ-Do-HNM"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="stn-eD-9KO" secondAttribute="bottom" constant="283" id="hfB-SI-Ggx"/>
                             <constraint firstItem="uaQ-TV-PiL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="kA7-cD-Hx5"/>
